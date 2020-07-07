@@ -1,0 +1,219 @@
+/*CONFIGURAÇÃO MENU HAMBURGUER*/
+body.menu-hamb {
+    overflow: hidden;
+}
+#menu-mask {
+    width: 0;
+}
+body.menu-hamb #menu-mask {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+#menu-hamburguer {
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 40px;
+    left: -70%;
+    transition: 0.2s;
+}
+body.menu-hamb #menu-hamburguer {
+    left: 0;
+    transition: .5s;
+}
+body.menu-hamb #menu-hamburguer ul {
+    float: none;
+    padding: 0px 15px;
+    margin-top: 115px;
+}
+body.menu-hamb #menu-hamburguer ul li {
+    margin-left: 0;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+body.menu-hamb #menu-hamburguer ul li:first-child {
+    border-top: 1px solid #ccc;
+}
+body.menu-hamb #menu-hamburguer ul li a {
+    color: #633392;
+    font-weight: bold;
+}
+body.menu-hamb #menu-hamburguer ul li:hover a {
+    font-size: 20px;
+}
+#menu-hamburguer .close-menu {
+    background-color: #633492;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    text-align: left;
+}
+#menu-hamburguer .btn-close-menu {
+    color: #fff;
+    border: none;
+    background: none;
+    font-size: 26px;
+    margin-left: 10px;
+}
+body.menu-hamb #logotipo img {
+    width: 66px;
+    transform: rotate(-360deg);
+    transition: .5s;
+}
+body.menu-hamb #logotipo {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 27%;
+}
+
+/*Breakpoints responsivos*/
+@media (min-width: 991.99px) {
+    #menu-hamburguer {
+        display: contents;
+    }
+
+}
+/* Dispositivos médios (tablets com menos de 992px) */
+@media (max-width: 991.98px) { 
+    
+    .banner {
+        height: 620px;
+        margin-top: -110px;
+    }
+    .titulo-banner h1 {
+        font-size: 82px;
+    }
+    .titulo-banner small {
+        font-size: 28px;
+    }
+    #logotipo {
+        text-align: center;
+    }
+    .estatisticas .number-est {
+        font-size: 50px;
+    }
+    .estatisticas .descricao-est {
+        font-size: 19px;
+    }
+    .titulo-padrao h3 {
+        font-size: 38px;
+    }
+    .titulo-padrao hr {
+        width: 170px;
+        height: 6px;
+    }
+    #input-menu-search {
+        width: 450px;
+    }
+
+}
+/* Dispositivos small (telefones em modo paisagem, com menos de 768px) */
+@media (max-width: 767.98px) { 
+    
+    .banner {
+        height: 500px;
+    }
+    .titulo-banner {
+        bottom: 140px;
+        left: 45px;
+    }
+    .titulo-banner h1 {
+        font-size: 72px;
+    }
+    .titulo-banner small {
+        font-size: 25px;
+    }
+    .titulo-padrao h3 {
+        text-align: center;
+    }
+    .cinza-escuro .row {
+        justify-content: center!important;
+    }
+    .cinza-escuro p.left{
+        margin-bottom: 0;
+    }
+    .cinza-escuro p.right{
+        margin-top: 0;
+        padding-left: 180px;
+    }
+    .get-in-touch h4,
+    .get-in-touch hr,
+    .get-in-touch address,
+    .get-in-touch span {
+        display: none;
+    }
+    #logotipo-footer {
+        text-align: center;
+    }
+    .get-in-touch ul {
+        justify-content: center;
+    }
+    .list-social .page-up {
+        cursor: pointer;
+    }
+    .list-social a {
+        width: 43px;
+        height: 43px;
+        margin: 0 10px;
+    }
+    .list-social i {
+        top: 7px;
+        left: 9px;
+        font-size: 28px;
+    }
+    .btn-footer {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .list-social i.up {
+        left: 7px;
+    }
+    #input-menu-search {
+        width: 350px;
+    }
+}
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+
+    .banner {
+        height: 350px;
+        background-position: 0px 0px;
+        margin-top: -150px;
+    }
+    .titulo-banner {
+        bottom:  75px
+    }
+    .titulo-banner h1 {
+        font-size: 44px;
+    }
+    .titulo-banner small {
+        font-size: 22px;
+        top: -5px;
+        left: -4px;
+    }
+    .estatisticas .dados {
+        margin: 15px auto;
+    }
+    .call-to-action {
+        margin-top: 90px;
+    }
+    .titulo-padrao h3 {
+        font-size: 32px;
+    }
+    .cinza-escuro p.left { 
+        font-size: 12px;
+    }
+    .cinza-escuro p.right { 
+        font-size: 10px;
+    }
+    #input-menu-search {
+        width: 260px;
+    }
+    
+}
