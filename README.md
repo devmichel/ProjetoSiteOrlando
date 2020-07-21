@@ -1,9 +1,22 @@
-# ProjetoSiteOrlando
-<<<<<<< HEAD
-Pagina web fictícia do Orlando City, feito no curso de Desenvolvimento Web na Udemy.
-<div align='center'>
-    <img src="./gif/ProjetoOrlando.gif">
+<div>
+
+# Projeto Site Orlando City
+
+### Pagina web fictícia do time Orlando City, feito no curso de Desenvolvimento Web na Udemy.
 </div>
-=======
-Pagina web fictícia do Orlando City.
->>>>>>> c1433945b4ec95e4127b31ca23bf1ff87330cac6
+
+<div>
+    <h3>( Desktop / Mobile ):</h3>
+    <img src="./gif/OrlandoDesktop.gif" width='770px'>
+    <img src="./gif/OrlandoMobile.gif" width='234px'>
+</div>
+<div>
+
+## 🚀 Tecnologias:
+✔️ Html5
+✔️ Css3
+✔️ Javascript
+✔️ Jquery
+✔️ Bootstrap4
+</div>
+
